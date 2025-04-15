@@ -36,6 +36,7 @@ pip install -r requirements.txt
 ### 1.4 Corre las migraciones y el servidor:
 
 python manage.py migrate
+
 python manage.py runserver
 
     Asegúrate de que el backend esté corriendo en http://127.0.0.1:8000/ (o  en la ip correspondiente)
