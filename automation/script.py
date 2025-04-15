@@ -10,7 +10,7 @@ from os.path import dirname
 from dotenv import load_dotenv
 import os
 
-# Carga variables de entorno
+
 load_dotenv()
 ODOO_URL = os.getenv("ODOO_URL")
 ODOO_DB = os.getenv("ODOO_DB")
@@ -22,7 +22,6 @@ ATTACHMENTS_PATH = os.getenv("ATTACHMENTS_PATH")
 FORM_USERNAME = os.getenv("FORM_USERNAME")
 FORM_PASSWORD = os.getenv("FORM_PASSWORD")
 
-# Configura logging: fichero + stdout
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
