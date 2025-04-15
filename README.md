@@ -57,18 +57,3 @@ docker run --env-file .env odoo-playwright-bot
 ⚙️ Variables de entorno
 
 Este proyecto utiliza un archivo .env para las credenciales del login y de Odoo. Asegúrate de tener un archivo .env en la raíz con el siguiente contenido:
-
-📁 Estructura del proyecto
-
-xm_demo/
-│
-├── automation/
-│   └── script.py         ← Script que se ejecuta con Docker
-│
-├── core/
-│   └── manage.py         ← Proyecto Django (correr localmente)
-│
-├── requirements.txt      ← Dependencias del proyecto
-├── Dockerfile            ← Dockeriza solo el script
-├── .env                  ← Credenciales 
- ── README.md             ← Guía completa
