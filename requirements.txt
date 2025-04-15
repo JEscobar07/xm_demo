@@ -1,0 +1,5 @@
+django>=5.2
+pandas
+playwright
+python-dotenv
+mysqlclient
