@@ -50,9 +50,9 @@ docker build -t odoo-playwright-bot .
 
 ### 2.2 Ejecutar el script:
 
-docker run --rm odoo-playwright-bot
+docker run --env-file .env odoo-playwright-bot
 
-     Este comando ejecuta el script dentro de un contenedor Docker que usa Playwright para automatizar tareas. El script se conecta al backend Django local, por lo tanto, asegúrate de que esté activo antes de correrlo.
+     Este comando ejecuta el script dentro de un contenedor Docker que usa Playwright para automatizar tareas. El script se conecta y envia las variables de entorno al backend Django local, por lo tanto, asegúrate de que esté activo antes de correrlo .
 
 ⚙️ Variables de entorno
 
