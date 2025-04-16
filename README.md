@@ -46,6 +46,8 @@ python manage.py runserver
     
 ### 🐳 2. Ejecutar el script de automatización con Docker
 
+Abrir otra terminal, dejan corriendo el servidor de django.
+
 Este proyecto incluye un Dockerfile para encapsular únicamente el script de automatización (./automation/script.py).
 
 ### 2.1 Construir la imagen Docker:
@@ -60,4 +62,4 @@ docker run --env-file .env odoo-playwright-bot
 
 ⚙️ Variables de entorno
 
-Este proyecto utiliza un archivo .env para las credenciales del login y de Odoo. Asegúrate de tener un archivo .env en la raíz con el siguiente contenido:
+Este proyecto utiliza un archivo .env para las credenciales del login y de Odoo. Asegúrate de tener un archivo .env en la raíz.
