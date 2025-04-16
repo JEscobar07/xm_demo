@@ -22,8 +22,8 @@ cd xm_demo
 En Windows:
 
 python -m venv .venv
-.
-venv\Scripts\activate
+
+.venv\Scripts\activate
 
 En Linux / macOS:
 
