@@ -36,6 +36,8 @@ pip install -r requirements.txt
 
 ### 1.4 Corre las migraciones y el servidor:
 
+cd ./core
+
 python manage.py migrate
 
 python manage.py runserver
