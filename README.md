@@ -63,3 +63,17 @@ docker run --env-file .env odoo-playwright-bot
 ⚙️ Variables de entorno
 
 Este proyecto utiliza un archivo .env para las credenciales del login y de Odoo. Asegúrate de tener un archivo .env en la raíz.
+
+Nota:
+
+Para visualizar las acciones que realiza el script seguir las siguientes instrucciones:
+
+0) Estar ejecuntando en una terminal el servidor MVC de django previamente con el comando "python manage.py runserver" debe mantener  ejecutandose en todo momento hasta final mientras continua con el siguientes pasos.
+1) Ir a la linea de codigo 119 del script que esta ubicado en la ruta: ./automation/script.py
+2) Cambiar la propiedad de headless a False ->  browser = await p.chromium.launch(headless=False, slow_mo=1000)
+3) Despues ingresar a la linea de codigo 4 del archivo de variables de entorno ubicada en la ruta : ./.env
+4) Cambiar la url http://host.docker.internal:8000 por la url donde se haya desplegado nuestro MVC de django , ejemplo -> PLAYWRIGHT_BASE_URL=http://127.0.0.1:8000
+5) Abrir una nueva terminal (sin eliminar la que se ha estado ejecutando el mvc de django)
+6) Activar nuevamente un entorno virtual con el comando .venv\Scripts\activate
+7) Ejecutar nuevamente el script con el siguiente comando: python ./automation/script.py
+
