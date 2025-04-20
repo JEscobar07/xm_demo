@@ -1,6 +1,9 @@
 
 Este proyecto automatiza la recolección de empleados desde Odoo CRM y los registra en un sistema local desarrollado con Django, utilizando Playwright.
 
+Se recomienda ver el video enviado por correo con otro reproductor diferente al principal de Windows 11, ya que presenta error al momento de abrirlo y se tiene que reproducir en ventana pequeña ya que el video esta comprimido para reproducir en calidad de 720.
+
+
 ---
 
 ## 🧰 Requisitos
